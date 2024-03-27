@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+    float metros, centimetros;
+    printf("digite a medida em metros: ");
+    scanf("%f", &metros);
+    
+    centimetros = metros * 100;
+    printf("%.1fm correspondem a %.1fcm", metros, centimetros);
+    return 0;
+}
