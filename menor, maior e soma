@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int N;
+    int menor, maior, soma = 0;
+
+
+    printf("Quantos numeros deseja inserir? ");
+    scanf("%d", &N);
+
+
+    for (int i = 0; i < N; ++i) {
+        int numero;
+        printf("Digite o %do numero: ", i + 1);
+        scanf("%d", &numero);
+
+        if (i == 0) {
+            menor = numero;
+            maior = numero;
+        } else {
+            if (numero < menor) menor = numero;
+            if (numero > maior) maior = numero;
+        }
+
+        soma += numero;
+    }
+
+
+    printf("Menor valor: %d\n", menor);
+    printf("Maior valor: %d\n", maior);
+    printf("Soma dos valores: %d\n", soma);
+
+    return 0;
+}
