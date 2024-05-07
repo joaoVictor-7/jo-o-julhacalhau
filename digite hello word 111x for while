@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(){
+    int frase = 0;
+    
+    while (frase < 11){
+        printf("hello word \n");
+        frase +=1;
+        }
+    return 0;
+}
